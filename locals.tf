@@ -54,4 +54,11 @@ locals {
     },
     var.nat_gateway_tags
   )
+  vpc_peering_final_tags = merge(
+    local.common_tags,
+    {
+      Name = "${var.project}-${var.environment}-default"
+    },
+    var.vpc_peering_tags
+  )
 }
