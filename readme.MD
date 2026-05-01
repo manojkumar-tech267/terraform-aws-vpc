@@ -8,7 +8,7 @@ A Terraform module for provisioning a production-ready AWS VPC with public, priv
 
 ```hcl
 module "vpc" {
-  source = "git::https://github.com/daws-88s/terraform-aws-vpc.git?ref=main"
+  source = "git::https://github.com/manojkumar-tech267/terraform-aws-vpc?ref=main"
 
   project     = "roboshop"
   environment = "dev"
